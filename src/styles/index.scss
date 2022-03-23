@@ -1,0 +1,14 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+@import '../components//Home/Home.scss';
+@import '../components/Home/form.scss';
+@import '../components/Home/input.scss';
+@import '../components/Home/success.scss';
+
+
+
+body{
+    margin: 0;
+    background: $backgroundColor;
+}

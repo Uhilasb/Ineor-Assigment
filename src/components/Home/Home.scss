@@ -1,0 +1,68 @@
+.home{
+    background: $backgroundColor;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    height: auto;
+
+    .header--div{
+        width: 100%;
+        .home--header{
+            text-transform: uppercase;
+            font-size: 58px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            font-family: $squadaOne;
+            @include breakpoint(xs){
+            width: 88%;
+            padding: 30px;
+            margin: 0 auto;
+            text-align: center;
+            }
+        }
+    }
+    .text--div{
+        width: 100%;
+        .home--text{
+            font-weight: 500;
+            letter-spacing: 1px;
+            font-family: $robotoSlab;
+            text-transform: capitalize;
+            font-size: 17px;
+            @include breakpoint(xs){
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+    
+                .desktop-aproach{
+                    display: none;
+                }
+            }
+            @include breakpoint(xl){
+                width: 32%;
+                .desktop-aproach{
+                    display: inline;
+                }
+            }
+        }
+    }
+
+    .home--image{
+        width: 85%;
+        margin: 4rem auto;
+        display: block;
+        border: 5px solid $borderColor;
+        padding: 17px;
+
+        @include breakpoint(xl){
+            width: 50%;
+            margin: 4rem 18rem;
+        }
+
+        @include breakpoint(lg){
+            width: 50%;
+            margin: 4rem 16rem;
+        }
+    }
+
+}

@@ -1,0 +1,192 @@
+.form--model{
+    width: 84%;
+    background: $borderColor;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    @include breakpoint(xl){
+        position: absolute;
+        top: 20vw;
+        right: 18vw;
+        width: 25%;
+    }
+
+    @include breakpoint(lg){
+        width: 33%;
+        position: absolute;
+        top: 23vw;
+        right: 9vw;
+    }
+
+    .form--header--block{
+        width: 100%;
+        margin-left: 13px;
+        .form--header{
+            color: white;
+            font-family: $squadaOne;
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px 0;
+            font-size: 37px;
+            font-weight: 500;
+            letter-spacing: 1.8px;
+            text-transform: uppercase;
+            @include breakpoint(lg){
+                margin-left: 10px;
+            }
+        }
+    }
+    .form--inputs{
+        display: flex;
+        flex-direction: column;
+        @include breakpoint(xl){
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            flex-direction: row;
+            width:100%;
+            margin-left: 10px;
+        }
+
+        @include breakpoint(lg){
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            flex-direction: row;
+            width:100%;
+            margin-left: 10px;
+        }
+
+        .last-child{
+            width: 100%;
+            @include breakpoint(xl){
+                width: 463px;
+                margin: 0;
+            }
+
+            @include breakpoint(lg){
+                width: 463px;
+                margin: 0;
+            }
+        }
+        
+        .form--control{
+            width: 100%;
+
+            @include breakpoint(xl){
+                width: 43%;
+                margin: 10px 5px;
+            }
+
+            @include breakpoint(lg){
+                width: 43%;
+                margin: 10px 5px;
+            }
+
+            .select--input{
+                width: 485px;
+                margin: 5px 0 10px 10px;
+                height: 50px;
+                @include breakpoint(xl){
+                    width: 215px;
+                    padding: 15px;
+                    border: $inputBorderColor;
+                    margin: 0;
+
+                    .option--value{
+                        color: white;
+                        font-family: $robotoSlab;
+                        font-size: 14px;
+                        font-weight: 500;
+                        letter-spacing: 0.6px;
+                    } 
+                }
+
+                @include breakpoint(lg){
+                    width: 215px;
+                    padding: 15px;
+                    border: $inputBorderColor;
+                    margin-left: 10px;
+
+
+                    .option--value{
+                        color: white;
+                        font-family: $robotoSlab;
+                        font-size: 14px;
+                        font-weight: 500;
+                        letter-spacing: 0.6px;
+                    } 
+                }
+            
+            }
+
+
+            #timepicker{
+                width: 480px;
+                height: 43px;
+                margin: 10px;
+                @include breakpoint(xl){
+                    width: 210px !important;
+                    height: 43px;
+                    margin: 0;
+                }
+                @include breakpoint(lg){
+                    width: 210px !important;
+                    height: 46px;
+                    margin-left: 10px;
+                    margin-top: 10px;
+                }
+            }
+           
+
+            .error-message{
+                margin-left: 10px;
+                color: red;
+            }
+        }
+
+        .full-width {
+            @include breakpoint(xl){
+                width: 100%;
+            }
+
+            @include breakpoint(lg){
+                width: 100%;
+            }
+        }
+
+        .mr{
+            @include breakpoint(xl){
+                margin-right: 20px;
+            }
+
+            @include breakpoint(lg){
+                margin-right: 20px;
+            }
+        }
+        
+        .form--submit{
+            width: 100%;
+            margin: 30px auto;
+            padding: 0 10px;
+            
+            .form--button{
+                width: 96%;
+                background: $buttonColor;
+                border: 0;
+                border-radius: 30px;
+                padding: 20px 40px;
+                color: white;
+                text-transform: uppercase;
+                font-size: 18px;
+                font-weight: 400;
+                letter-spacing: 2px;
+                font-family: $robotoSlab;
+            }
+        }
+        
+    }
+}

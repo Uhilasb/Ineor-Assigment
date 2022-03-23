@@ -1,0 +1,21 @@
+.form--input{
+    width: 90%;
+    margin: 10px;
+    @include breakpoint(xl){
+        margin: 0;
+        position: relative;
+    }
+    .input{
+        width: 100%;
+        padding: 15px;
+        border: $inputBorderColor;
+    }
+
+    ::-webkit-input-placeholder{
+        color: $inputBorderColor !important;
+        font-family: $robotoSlab;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.6px;
+    } 
+}
